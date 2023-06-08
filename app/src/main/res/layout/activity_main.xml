@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="20px">
+
+<!--    <ImageView-->
+<!--        android:layout_width="100sp"-->
+<!--        android:layout_height="100sp"-->
+<!--        android:src="@drawable/icon"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="30px"-->
+<!--        />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign To Speech Translator"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:textColor="@android:color/black"
+        android:textFontWeight="800"
+
+         />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bluetooth Status : Disconnected"-->
+<!--        android:textSize="16sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="15sp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textFontWeight="200"-->
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Status : "
+            android:textSize="16sp"
+
+            android:textColor="@android:color/black"
+            android:textFontWeight="200"
+            android:layout_marginLeft="103sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnected"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:textFontWeight="200"
+            android:id="@+id/dis_connect_stat"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="Connect"
+            android:minWidth="1.3in"
+            android:minHeight="0.4in"
+
+            />
+<!--            android:background="@drawable/round_button"-->
+        <Button
+
+            android:id="@+id/dis_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="@color/red"
+            android:text="Disconnect"
+            android:minWidth="1.3in"
+            android:minHeight="0.4in"
+            />
+<!--            android:background="@drawable/round_button"-->
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_view"
+        android:text="Paired Devices"
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/black"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trans_text"
+        android:hint="Translated Signs"
+        android:layout_marginTop="25sp"
+
+        android:paddingBottom="90sp"
+        android:textSize="28sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speak"
+        android:id="@+id/speak"
+        android:minWidth="0.8in"
+        android:minHeight="0.4in"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Translate"
+            android:id="@+id/translate"
+            android:layout_marginHorizontal="15sp"
+            android:minWidth="0.8in"
+            android:minHeight="0.4in"
+            android:onClick="buttonUrdu"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/clear"
+            android:minWidth="0.8in"
+            android:minHeight="0.4in"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speak Urdu"
+        android:id="@+id/speak2"
+        android:minWidth="0.8in"
+        android:minHeight="0.4in"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="212dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:onClick="buttonDownloadModel"-->
+<!--        android:text="Download Model"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+
+</LinearLayout>
